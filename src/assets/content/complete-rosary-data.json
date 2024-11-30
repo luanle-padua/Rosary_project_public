@@ -1,0 +1,247 @@
+{
+  "commonPrayers": {
+    "signOfCross": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.",
+    "apostlesCreed": "I believe in God, the Father Almighty, Creator of heaven and earth; and in Jesus Christ, His only Son, our Lord; Who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried. He descended into hell; the third day He arose again from the dead; He ascended into heaven, sits at the right hand of God, the Father Almighty; from thence He shall come to judge the living and the dead. I believe in the Holy Spirit, the Holy Catholic Church, the communion of Saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.",
+    "ourFather": "Our Father, who art in heaven, hallowed be Thy name; Thy kingdom come; Thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.",
+    "hailMary": "Hail Mary, full of grace, the Lord is with thee; blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.",
+    "gloryBe": "Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.",
+    "fatimaPrayer": "O my Jesus, forgive us our sins, save us from the fires of hell, lead all souls to Heaven, especially those who have most need of your mercy.",
+    "hailHolyQueen": "Hail, Holy Queen, Mother of Mercy, our life, our sweetness and our hope. To thee do we cry, poor banished children of Eve. To thee do we send up our sighs, mourning and weeping in this valley of tears. Turn then, most gracious advocate, thine eyes of mercy toward us, and after this our exile, show unto us the blessed fruit of thy womb, Jesus. O clement, O loving, O sweet Virgin Mary. Pray for us, O Holy Mother of God, that we may be made worthy of the promises of Christ.",
+    "finalPrayer": "O God, whose only-begotten Son, by His life, death, and resurrection, has purchased for us the rewards of eternal life; grant, we beseech Thee, that, meditating upon these mysteries of the Most Holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promise, through the same Christ our Lord. Amen."
+  },
+  "prayerNames": {
+    "signOfCross": "Sign of the Cross",
+    "apostlesCreed": "Apostles' Creed",
+    "ourFather": "Our Father",
+    "hailMary": "Hail Mary",
+    "gloryBe": "Glory Be",
+    "fatimaPrayer": "Fatima Prayer",
+    "hailHolyQueen": "Hail Holy Queen",
+    "finalPrayer": "Final Prayer"
+  },
+  "structure": {
+    "opening": [
+      { "step": 1, "prayer": "signOfCross" },
+      { "step": 2, "prayer": "apostlesCreed" },
+      { "step": 3, "prayer": "ourFather" },
+      { "step": 4, "prayer": "hailMary", "repeat": 3 },
+      { "step": 5, "prayer": "gloryBe" }
+    ],
+    "decade": [
+      { "step": 1, "type": "announce", "prayer": "mystery" },
+      { "step": 2, "prayer": "ourFather" },
+      { "step": 3, "prayer": "hailMary", "repeat": 10 },
+      { "step": 4, "prayer": "gloryBe" },
+      { "step": 5, "prayer": "fatimaPrayer" }
+    ],
+    "closing": [
+      { "step": 1, "prayer": "hailHolyQueen" },
+      { "step": 2, "prayer": "finalPrayer" },
+      { "step": 3, "prayer": "signOfCross" }
+    ]
+  },
+  "mysteries": {
+    "joyful": {
+      "name": "Joyful Mysteries",
+      "days": ["monday", "saturday"],
+      "mysteries": [
+        {
+          "number": 1,
+          "title": "The Annunciation",
+          "fruit": "Humility",
+          "description": "The Angel Gabriel announces to Mary that she is to be the Mother of God",
+          "scripture": "Luke 1:26-38",
+          "meditation": "Mary's humble acceptance of God's will"
+        },
+        {
+          "number": 2,
+          "title": "The Visitation",
+          "fruit": "Love of Neighbor",
+          "description": "Mary visits her cousin Elizabeth",
+          "scripture": "Luke 1:39-56",
+          "meditation": "Mary's service to her cousin Elizabeth"
+        },
+        {
+          "number": 3,
+          "title": "The Nativity",
+          "fruit": "Poverty of Spirit",
+          "description": "Jesus is born in Bethlehem",
+          "scripture": "Luke 2:1-20",
+          "meditation": "The birth of Jesus in humble circumstances"
+        },
+        {
+          "number": 4,
+          "title": "The Presentation",
+          "fruit": "Obedience",
+          "description": "Mary and Joseph present Jesus in the Temple",
+          "scripture": "Luke 2:22-38",
+          "meditation": "Mary and Joseph's obedience to the Law"
+        },
+        {
+          "number": 5,
+          "title": "Finding Jesus in the Temple",
+          "fruit": "Joy in Finding Jesus",
+          "description": "Mary and Joseph find Jesus teaching in the Temple",
+          "scripture": "Luke 2:41-52",
+          "meditation": "Finding Jesus after three days of searching"
+        }
+      ]
+    },
+    "luminous": {
+      "name": "Luminous Mysteries",
+      "days": ["thursday"],
+      "mysteries": [
+        {
+          "number": 1,
+          "title": "The Baptism of Jesus",
+          "fruit": "Openness to the Holy Spirit",
+          "description": "Jesus is baptized in the Jordan River",
+          "scripture": "Matthew 3:13-17",
+          "meditation": "God proclaims Jesus as His beloved Son"
+        },
+        {
+          "number": 2,
+          "title": "The Wedding at Cana",
+          "fruit": "To Jesus through Mary",
+          "description": "Jesus performs His first miracle at Mary's request",
+          "scripture": "John 2:1-11",
+          "meditation": "Mary's intercession and Jesus' first public miracle"
+        },
+        {
+          "number": 3,
+          "title": "The Proclamation of the Kingdom",
+          "fruit": "Repentance and Trust in God",
+          "description": "Jesus proclaims the Kingdom of God",
+          "scripture": "Mark 1:14-15",
+          "meditation": "Jesus calls all to conversion"
+        },
+        {
+          "number": 4,
+          "title": "The Transfiguration",
+          "fruit": "Desire for Holiness",
+          "description": "Jesus is transfigured on Mount Tabor",
+          "scripture": "Matthew 17:1-8",
+          "meditation": "Jesus reveals His divine glory"
+        },
+        {
+          "number": 5,
+          "title": "The Institution of the Eucharist",
+          "fruit": "Adoration",
+          "description": "Jesus establishes the Eucharist",
+          "scripture": "Matthew 26:26-28",
+          "meditation": "Jesus gives us His Body and Blood"
+        }
+      ]
+    },
+    "sorrowful": {
+      "name": "Sorrowful Mysteries",
+      "days": ["tuesday", "friday"],
+      "mysteries": [
+        {
+          "number": 1,
+          "title": "The Agony in the Garden",
+          "fruit": "Contrition for Sin",
+          "description": "Jesus prays in the Garden of Gethsemane",
+          "scripture": "Luke 22:39-46",
+          "meditation": "Jesus accepts the Father's will"
+        },
+        {
+          "number": 2,
+          "title": "The Scourging at the Pillar",
+          "fruit": "Purity",
+          "description": "Jesus is scourged at the pillar",
+          "scripture": "John 19:1",
+          "meditation": "Jesus suffers for our sins"
+        },
+        {
+          "number": 3,
+          "title": "The Crowning with Thorns",
+          "fruit": "Moral Courage",
+          "description": "Jesus is crowned with thorns",
+          "scripture": "Matthew 27:27-31",
+          "meditation": "Jesus is mocked as king"
+        },
+        {
+          "number": 4,
+          "title": "The Carrying of the Cross",
+          "fruit": "Patience",
+          "description": "Jesus carries His cross to Calvary",
+          "scripture": "Luke 23:26-32",
+          "meditation": "Jesus embraces His cross"
+        },
+        {
+          "number": 5,
+          "title": "The Crucifixion",
+          "fruit": "Perseverance",
+          "description": "Jesus dies on the cross",
+          "scripture": "Luke 23:33-46",
+          "meditation": "Jesus gives His life for our salvation"
+        }
+      ]
+    },
+    "glorious": {
+      "name": "Glorious Mysteries",
+      "days": ["wednesday", "sunday"],
+      "mysteries": [
+        {
+          "number": 1,
+          "title": "The Resurrection",
+          "fruit": "Faith",
+          "description": "Jesus rises from the dead",
+          "scripture": "John 20:1-9",
+          "meditation": "Jesus conquers death"
+        },
+        {
+          "number": 2,
+          "title": "The Ascension",
+          "fruit": "Hope",
+          "description": "Jesus ascends into heaven",
+          "scripture": "Acts 1:6-11",
+          "meditation": "Jesus returns to the Father"
+        },
+        {
+          "number": 3,
+          "title": "The Descent of the Holy Spirit",
+          "fruit": "Love of God",
+          "description": "The Holy Spirit descends upon the Apostles",
+          "scripture": "Acts 2:1-4",
+          "meditation": "The birth of the Church"
+        },
+        {
+          "number": 4,
+          "title": "The Assumption of Mary",
+          "fruit": "Grace of a Happy Death",
+          "description": "Mary is assumed into heaven",
+          "scripture": "Revelation 12:1",
+          "meditation": "Mary is taken body and soul into heaven"
+        },
+        {
+          "number": 5,
+          "title": "The Coronation of Mary",
+          "fruit": "Trust in Mary's Intercession",
+          "description": "Mary is crowned Queen of Heaven and Earth",
+          "scripture": "Revelation 12:1",
+          "meditation": "Mary is crowned Queen of Heaven"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "language": "english",
+    "lastUpdated": "2024-11-07",
+    "sources": {
+      "prayers": "Traditional Catholic Prayers",
+      "mysteries": "Roman Catholic Church"
+    },
+    "usage": {
+      "monday": "joyful",
+      "tuesday": "sorrowful",
+      "wednesday": "glorious",
+      "thursday": "luminous",
+      "friday": "sorrowful",
+      "saturday": "joyful",
+      "sunday": "glorious"
+    }
+  }
+}

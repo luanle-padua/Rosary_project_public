@@ -1,0 +1,323 @@
+/* mobile layout */
+/* Mobile Layout Styles */
+@media (max-width: 768px) {
+  .mobile-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--vintage-brown);
+    overflow: hidden;
+  }
+  .viewport-container {
+    position: relative;
+    width: 100%; /* Change from min-width: 100vw */
+    height: 100vh;
+    overflow: hidden; /* Keep this to prevent scrolling */
+  }
+  /* Ensure parent container also prevents overflow */
+  .scroll-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Mobile Header Styles  */
+  .mobile-header {
+    padding: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    max-height: 8vh;
+  }
+
+  .mobile-logo-date {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+  }
+
+  .mobile-logo {
+    height: 55px;
+    object-fit: contain;
+    transform: translateX(15px);
+  }
+
+  .mobile-date {
+    color: #ffffff;
+  }
+
+  .mobile-date .day {
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .date-details {
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+
+  .mobile-nav-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    margin-left: 1rem;
+    transform: translateX(-10px);
+    width: 40px;
+    height: 40px;
+  }
+
+  .mobile-nav-buttons button {
+    background: transparent;
+    border: none;
+    color: white;
+
+    padding: 0.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+  }
+
+  .mobile-nav-buttons button:hover {
+    color: white;
+  }
+
+  .mobile-nav-buttons button:disabled {
+    color: rgba(255, 255, 255, 0.3);
+    cursor: not-allowed;
+  }
+
+  .mobile-mystery-container {
+    flex: 0.8; /* Reduce from 1 to make it take less vertical space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0; /* Reduced padding */
+    padding-left: 20px;
+    padding-right: 20px;
+    max-height: 40vh; /* Add maximum height constraint */
+    min-height: 50vh; /* Increase minimum height */
+  }
+
+  .mobile-mystery-image {
+    /* Change from max-width to specific aspect ratio */
+    width: min(
+      100%,
+      calc(100vh - 400px)
+    ); /* This will make it square but not too large */
+    height: min(100%, calc(100vh - 400px));
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    /* Add rounded corners */
+    border-radius: 20px;
+    /* Add slight shadow for depth */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Keep your gradient mask but adjust for rounded corners */
+    mask-image: radial-gradient(circle at center, black 40%, transparent 100%),
+      linear-gradient(to bottom, black, black);
+    -webkit-mask-image: radial-gradient(
+        circle at center,
+        black 40%,
+        transparent 100%
+      ),
+      linear-gradient(to bottom, black, black);
+    /* Ensure masks respect border radius */
+    -webkit-mask-composite: source-over;
+    mask-composite: add;
+    /* Optional: add a border */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .mobile-mystery-image.loaded {
+    opacity: 1;
+  }
+
+  .mobile-controls {
+    padding: 0; /* Remove padding */
+    background-color: var(--vintage-brown);
+    position: relative;
+    transform: translateY(-0); /* Move up by 20px */
+    max-height: 6vh;
+  }
+
+  .mobile-controls-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1500px;
+    margin: 0 auto;
+    max-height: 6vh;
+  }
+
+  .playback-controls {
+    display: flex;
+    gap: 0px; /* Reduced gap between buttons */
+  }
+
+  .nav-button,
+  .control-button {
+    background: transparent;
+    border: none;
+    padding: 8px; /* Add small padding instead of fixed width/height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: opacity 0.2s ease;
+    /* Remove border-radius and width/height to let icon size control button size */
+  }
+
+  /* Remove hover background effect, just adjust opacity */
+  .nav-button:not(:disabled):hover,
+  .control-button:hover {
+    opacity: 0.7;
+  }
+
+  .nav-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  /* Make prayer info take remaining space */
+  .mobile-prayer-info {
+    flex: 1; /* This will take up remaining space */
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: var(--vintage-brown);
+    overflow-y: auto; /* Allow scrolling if content is too long */
+  }
+
+  /* Organize the content within prayer info */
+  .current-prayer {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+    font-family: var(--font-primary);
+    font-size: max(1.5rem, 2vw);
+  }
+
+  .progress-text {
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+    opacity: 0.8;
+    margin-bottom: 10px;
+  }
+
+  .auto-playing {
+    font-size: 0.7rem;
+    opacity: 0.6;
+    margin-top: 4px;
+  }
+  F
+  /* Hide desktop elements */
+  .part-b,
+  .right-column {
+    display: none;
+  }
+}
+
+/* Landscape mode adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+  .mobile-mystery-container {
+    padding: 10px 0;
+  }
+
+  .mobile-controls {
+    padding: 10px;
+  }
+
+  .mobile-prayer-info {
+    padding: 10px;
+  }
+
+  .nav-button,
+  .control-button {
+    width: 40px;
+    height: 40px;
+  }
+}
+.no-background {
+  background: transparent !important;
+  border: none; /* Remove any border if present */
+  box-shadow: none; /* Remove any box shadow if present */
+}
+
+.no-background:hover {
+  background: transparent; /* Ensure hover state does not add a background */
+}
+
+/* Add to your MobileLayout.css */
+
+/* Handle iOS safe areas and fullscreen */
+:root {
+  --sat: env(safe-area-inset-top);
+  --sab: env(safe-area-inset-bottom);
+  --sal: env(safe-area-inset-left);
+  --sar: env(safe-area-inset-right);
+}
+
+@media (max-width: 768px) {
+  /* Prevent overscroll behavior */
+  html {
+    overscroll-behavior: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    overscroll-behavior: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Update mobile layout for fullscreen */
+  .mobile-layout {
+    padding-top: var(--sat);
+    padding-bottom: var(--sab);
+    padding-left: var(--sal);
+    padding-right: var(--sar);
+    min-height: -webkit-fill-available;
+    height: 100vh;
+  }
+
+  /* Prevent pull-to-refresh */
+  .mobile-layout {
+    touch-action: manipulation;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide browser UI when in standalone mode */
+  @media all and (display-mode: standalone) {
+    .mobile-layout {
+      padding-top: 0;
+    }
+  }
+}
+
+/* Hide scrollbars but keep functionality */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

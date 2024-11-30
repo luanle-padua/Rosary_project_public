@@ -1,0 +1,202 @@
+/* MobileLanding.css */
+:root {
+  --vintage-brown: #241102;
+  --vintage-cream: #fffdd0;
+  --vintage-orange: #c18d65;
+  --vintage-tan: #9f7452;
+  --highlight-color: #e78233;
+  --font-primary: "Cormorant-SemiBold", monospace;
+  --font-secondary: "Cormorant Garamond", monospace;
+}
+
+.mobile-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--vintage-brown);
+  color: white;
+  overflow: hidden;
+}
+
+.mobile-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  padding: env(safe-area-inset-top) 0 calc(env(safe-area-inset-bottom)) 0;
+}
+
+.mobile-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.image-section {
+  width: 100%;
+  height: 85vh; /* Increased from 70vh to 85vh */
+  min-height: 600px; /* Increased from 400px to 600px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.intro-image {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.button-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 16px;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.lang-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+}
+
+.lang-code {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.pray-btn {
+  background: transparent;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-family: var(--font-primary);
+  font-size: 1.35rem;
+  border: 1px solid var(--vintage-cream);
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.pray-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.text-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+
+.description-paragraph {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--font-secondary);
+  color: var(--vintage-cream);
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+/* iPhone and similar sized devices */
+@media screen and (max-width: 380px) {
+  .image-section {
+    height: 70vh; /* Increased from 60vh */
+    min-height: 450px; /* Increased from 300px */
+  }
+  
+  .button-section {
+    gap: 1rem;
+  }
+  
+  .pray-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .description-paragraph {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+}
+
+/* Medium sized devices */
+@media screen and (min-width: 381px) and (max-width: 428px) {
+  .image-section {
+    height: 750vh; /* Increased from 65vh */
+    min-height: 550px; /* Increased from 350px */
+  }
+}
+
+/* Larger devices (iPhone Pro Max etc) */
+@media screen and (min-width: 429px) {
+  .image-section {
+    height: 75vh; /* Increased from 70vh */
+    min-height: 600px; /* Increased from 400px */
+  }
+  
+  .description-paragraph {
+    max-width: 600px;
+    padding: 0 1.5rem;
+  }
+}
+
+/* Extra tall screens */
+@media screen and (min-height: 800px) {
+  .image-section {
+    height: 88vh;
+    min-height: 700px;
+  }
+}
+
+/* Handle notch/safe areas for different devices */
+@supports (padding: max(0px)) {
+  .mobile-content {
+    padding-top: max(env(safe-area-inset-top), 0);
+    padding-bottom: max(env(safe-area-inset-bottom), 0.5rem);
+    padding-left: max(env(safe-area-inset-left), 0);
+    padding-right: max(env(safe-area-inset-right), 0);
+  }
+}

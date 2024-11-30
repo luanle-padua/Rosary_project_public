@@ -1,0 +1,225 @@
+{
+  "commonPrayers": {
+    "signOfCross": "Nhân danh Cha và Con và Thánh Thần. Amen.",
+    "apostlesCreed": "Tôi tin kính Đức Chúa Trời là Cha phép tắc vô cùng dựng nên trời đất. Tôi tin kính Đức Chúa Giêsu Kitô là Con Một Đức Chúa Cha cùng là Chúa chúng tôi. Bởi phép Đức Chúa Thánh Thần mà Người xuống thai, sinh bởi Bà Maria đồng trinh, chịu nạn đời quan Phongxiô Philatô, chịu đóng đinh trên cây Thánh Giá, chết và táng xác, xuống ngục tổ tông, ngày thứ ba bởi trong kẻ chết mà sống lại, lên trời, ngự bên hữu Đức Chúa Cha phép tắc vô cùng, ngày sau bởi trời lại xuống phán xét kẻ sống và kẻ chết. Tôi tin kính Đức Chúa Thánh Thần. Tôi tin có Hội Thánh hằng có ở khắp thế này, các thánh thông công. Tôi tin phép tha tội. Tôi tin xác loài người ngày sau sống lại. Tôi tin hằng sống vậy. Amen.",
+    "ourFather": "Lạy Cha chúng con ở trên trời, chúng con nguyện danh Cha cả sáng, nước Cha trị đến, ý Cha thể hiện dưới đất cũng như trên trời. Xin Cha cho chúng con hôm nay lương thực hằng ngày, và tha nợ chúng con như chúng con cũng tha kẻ có nợ chúng con. Xin chớ để chúng con sa chước cám dỗ, nhưng cứu chúng con cho khỏi sự dữ. Amen.",
+    "hailMary": "Kính mừng Maria đầy ơn phúc, Đức Chúa Trời ở cùng Bà, Bà có phúc lạ hơn mọi người nữ, và Giêsu con lòng Bà gồm phúc lạ. Thánh Maria Đức Mẹ Chúa Trời, cầu cho chúng con là kẻ có tội khi nay và trong giờ lâm tử. Amen.",
+    "gloryBe": "Sáng danh Đức Chúa Cha và Đức Chúa Con và Đức Chúa Thánh Thần. Như đã có trước vô cùng, và bây giờ, và hằng có, và đời đời chẳng cùng. Amen.",
+    "fatimaPrayer": "Lạy Chúa Giêsu, xin tha tội cho chúng con, xin cứu chúng con khỏi lửa hỏa ngục, xin đem các linh hồn lên Thiên Đàng, nhất là những linh hồn cần đến lòng Chúa thương xót hơn.",
+    "hailHolyQueen": "Lạy Nữ Vương, Mẹ nhân lành, làm cho chúng con được sống, được vui, được cậy. Thân lạy Mẹ, chúng con con cháu E-và ở chốn khách đày kêu đến cùng Bà, chúng con ở nơi khóc lóc than thở kêu khấn Bà thương. Hỡi ơi! Bà là Chúa bàu chúng con, xin ghé mặt thương xem chúng con. Đến sau khỏi đày, xin cho chúng con được thấy Đức Chúa Giêsu con lòng Bà gồm phúc lạ. Ôi khoan thay! Nhân thay! Dịu thay! Thánh Maria trọn đời đồng trinh. Amen.",
+    "finalPrayer": "Chúng con trông cậy Rất Thánh Đức Mẹ Chúa Trời, xin chớ chê chớ bỏ lời chúng con nguyện trong cơn gian nan thiếu thốn, Đức Nữ Đồng Trinh hiển vinh sáng láng.Hằng chữa chúng con cho khỏi sự dữ. Amen. Lạy Trái Tim Cực Thánh Chúa Giêsu.Xin thương xót chúng con. Lạy Trái Tim cực thanh cực tịnh Rất Thánh Đức Bà Maria. Xin cầu cho chúng con. Lạy ông thánh Giuse là bạn thanh sạch Đức Bà Maria trọn đời đồng trinh. Xin cầu cho chúng con."
+  },
+  "prayerNames": {
+    "signOfCross": "Dấu Thánh Giá",
+    "apostlesCreed": "Kinh Tin Kính",
+    "ourFather": "Kinh Lạy Cha",
+    "hailMary": "Kinh Kính Mừng",
+    "gloryBe": "Kinh Sáng Danh",
+    "fatimaPrayer": "Kinh Fatima",
+    "hailHolyQueen": "Kinh Lạy Nữ Vương",
+    "finalPrayer": "Kinh Kết"
+  },
+  "structure": {
+    "opening": [
+      { "step": 1, "prayer": "signOfCross" },
+      { "step": 2, "prayer": "apostlesCreed" },
+      { "step": 3, "prayer": "ourFather" },
+      { "step": 4, "prayer": "hailMary", "repeat": 3 },
+      { "step": 5, "prayer": "gloryBe" }
+    ],
+    "decade": [
+      { "step": 1, "type": "announce", "prayer": "mystery" },
+      { "step": 2, "prayer": "ourFather" },
+      { "step": 3, "prayer": "hailMary", "repeat": 10 },
+      { "step": 4, "prayer": "gloryBe" },
+      { "step": 5, "prayer": "fatimaPrayer" }
+    ],
+    "closing": [
+      { "step": 1, "prayer": "hailHolyQueen" },
+      { "step": 2, "prayer": "finalPrayer" },
+      { "step": 3, "prayer": "signOfCross" }
+    ]
+  },
+  "mysteries": {
+    "joyful": {
+      "name": "NĂM SỰ VUI",
+      "days": ["monday", "saturday"],
+      "mysteries": [
+        {
+          "number": 1,
+          "title": "Truyền Tin",
+          "fruit": "Khiêm Nhường",
+          "description": "Thiên Thần truyền tin cho Đức Mẹ chịu thai",
+          "scripture": "Luca 1:26-38",
+          "meditation": "Đức Maria khiêm nhường vâng theo ý Chúa"
+        },
+        {
+          "number": 2,
+          "title": "Thăm Viếng",
+          "fruit": "Bác Ái",
+          "description": "Đức Mẹ đi viếng Bà thánh Isave",
+          "scripture": "Luca 1:39-56",
+          "meditation": "Đức Maria phục vụ người chị họ Elizabeth"
+        },
+        {
+          "number": 3,
+          "title": "Giáng Sinh",
+          "fruit": "Nghèo Khó",
+          "description": "Đức Chúa Giêsu sinh ra tại Bêlem",
+          "scripture": "Luca 2:1-20",
+          "meditation": "Chúa Giêsu sinh ra trong cảnh nghèo khó"
+        },
+        {
+          "number": 4,
+          "title": "Dâng Con",
+          "fruit": "Vâng Phục",
+          "description": "Đức Mẹ dâng Đức Chúa Giêsu trong đền thánh",
+          "scripture": "Luca 2:22-38",
+          "meditation": "Đức Maria và Thánh Giuse vâng phục Lề Luật"
+        },
+        {
+          "number": 5,
+          "title": "Tìm Con",
+          "fruit": "Tìm Kiếm Chúa",
+          "description": "Đức Mẹ tìm được Đức Chúa Giêsu trong đền thánh",
+          "scripture": "Luca 2:41-52",
+          "meditation": "Tìm thấy Chúa Giêsu sau ba ngày tìm kiếm"
+        }
+      ]
+    },
+    "luminous": {
+      "name": "NĂM SỰ SÁNG",
+      "days": ["thursday"],
+      "mysteries": [
+        {
+          "number": 1,
+          "title": "Chịu Phép Rửa",
+          "fruit": "Thánh Ý Chúa",
+          "description": "Đức Chúa Giêsu chịu phép rửa tại sông Giođan",
+          "scripture": "Mátthêu 3:13-17",
+          "meditation": "Thiên Chúa tuyên xưng Đức Giêsu là Con yêu dấu"
+        },
+        {
+          "number": 2,
+          "title": "Tiệc Cưới Cana",
+          "fruit": "Tin Tưởng Mẹ Maria",
+          "description": "Đức Chúa Giêsu làm phép lạ tại tiệc cưới Cana",
+          "scripture": "Gioan 2:1-11",
+          "meditation": "Đức Mẹ chuyển cầu và phép lạ đầu tiên của Chúa"
+        }
+      ]
+    },
+    "sorrowful": {
+  "name": "NĂM SỰ THƯƠNG",
+  "days": ["tuesday", "friday"],
+  "mysteries": [
+    {
+      "number": 1,
+      "title": "Hấp Hối Trong Vườn",
+      "fruit": "Ăn Năn Tội",
+      "description": "Đức Chúa Giêsu lo buồn đổ mồ hôi máu",
+      "scripture": "Luca 22:39-46",
+      "meditation": "Chúa Giêsu vâng theo ý Chúa Cha"
+    },
+    {
+      "number": 2,
+      "title": "Đánh Đòn",
+      "fruit": "Trong Sạch",
+      "description": "Đức Chúa Giêsu chịu đánh đòn",
+      "scripture": "Gioan 19:1",
+      "meditation": "Chúa Giêsu chịu đau khổ vì tội lỗi chúng ta"
+    },
+    {
+      "number": 3,
+      "title": "Đội Mão Gai",
+      "fruit": "Can Đảm",
+      "description": "Đức Chúa Giêsu chịu đội mão gai",
+      "scripture": "Mátthêu 27:27-31",
+      "meditation": "Chúa Giêsu chịu nhục nhã vì chúng ta"
+    },
+    {
+      "number": 4,
+      "title": "Vác Thập Giá",
+      "fruit": "Nhẫn Nại",
+      "description": "Đức Chúa Giêsu vác cây Thánh Giá",
+      "scripture": "Luca 23:26-32",
+      "meditation": "Chúa Giêsu vác thập giá vì chúng ta"
+    },
+    {
+      "number": 5,
+      "title": "Chịu Chết Trên Thập Giá",
+      "fruit": "Bền Đỗ",
+      "description": "Đức Chúa Giêsu chịu chết trên cây Thánh Giá",
+      "scripture": "Luca 23:33-46",
+      "meditation": "Chúa Giêsu hiến mạng sống vì phần rỗi chúng ta"
+    }
+  ]
+    },
+    "glorious": {
+      "name": "NĂM SỰ MỪNG",
+      "days": ["wednesday", "sunday"],
+      "mysteries": [
+        {
+          "number": 1,
+          "title": "Phục Sinh",
+          "fruit": "Đức Tin",
+          "description": "Đức Chúa Giêsu sống lại",
+          "scripture": "Gioan 20:1-9",
+          "meditation": "Chúa Giêsu chiến thắng sự chết"
+        },
+        {
+          "number": 2,
+          "title": "Lên Trời",
+          "fruit": "Đức Cậy",
+          "description": "Đức Chúa Giêsu lên trời",
+          "scripture": "Công Vụ 1:6-11",
+          "meditation": "Chúa Giêsu trở về cùng Chúa Cha"
+        },
+        {
+          "number": 3,
+          "title": "Chúa Thánh Thần Hiện Xuống",
+          "fruit": "Đức Mến",
+          "description": "Đức Chúa Thánh Thần hiện xuống",
+          "scripture": "Công Vụ 2:1-4",
+          "meditation": "Giáo Hội được khai sinh"
+        },
+        {
+          "number": 4,
+          "title": "Đức Mẹ Lên Trời",
+          "fruit": "Ơn Chết Lành",
+          "description": "Đức Mẹ hồn xác lên trời",
+          "scripture": "Khải Huyền 12:1",
+          "meditation": "Đức Mẹ được đưa cả hồn xác lên trời"
+        },
+        {
+          "number": 5,
+          "title": "Đức Mẹ Nữ Vương",
+          "fruit": "Tín Thác Vào Mẹ",
+          "description": "Đức Mẹ làm Nữ Vương trời đất",
+          "scripture": "Khải Huyền 12:1",
+          "meditation": "Đức Mẹ được tôn vinh làm Nữ Vương thiên đàng"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "language": "vietnamese",
+    "lastUpdated": "2024-11-07",
+    "sources": {
+      "prayers": "Kinh Nguyện Công Giáo Truyền Thống",
+      "mysteries": "Giáo Hội Công Giáo"
+    },
+    "usage": {
+      "monday": "joyful",
+      "tuesday": "sorrowful",
+      "wednesday": "glorious",
+      "thursday": "luminous",
+      "friday": "sorrowful",
+      "saturday": "joyful",
+      "sunday": "glorious"
+    }
+  }
+}
+
+

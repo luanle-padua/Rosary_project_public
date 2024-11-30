@@ -1,0 +1,59 @@
+
+{
+  "navigation": {
+    "play": "Phát",
+    "pause": "Tạm dừng",
+    "stop": "Dừng",
+    "mute": "Tắt tiếng",
+    "unmute": "Bật tiếng"
+  },
+  "prayers": {
+    "signOfCross": "Dấu Thánh Giá",
+    "apostlesCreed": "Kinh Tin Kính",
+    "ourFather": "Kinh Lạy Cha",
+    "hailMary": "Kinh Kính Mừng",
+    "gloryBe": "Kinh Sáng Danh",
+    "fatimaPrayer": "Kinh Fatima",
+    "hailHolyQueen": "Kinh Lạy Nữ Vương",
+    "finalPrayer": "Kinh Kết"
+  },
+  "sections": {
+    "opening": "Mở đầu",
+    "decade": "Chục",
+    "closing": "Kết thúc"
+  },
+  "progress": {
+    "mystery": "Mầu nhiệm {{number}} / 5",
+    "prayers": "{{section}}: {{current}} / {{total}}",
+    "autoPlaying": "Đang tự động phát"
+  },
+  "intentions": {
+    "faith": "Cầu cho đức tin tăng trưởng",
+    "hope": "Cầu cho đức cậy tăng trưởng",
+    "charity": "Cầu cho đức mến tăng trưởng"
+  },
+  "loading": "Đang tải...",
+  "days": {
+    "SUNDAY": "CHỦ NHẬT",
+    "MONDAY": "THỨ HAI",
+    "TUESDAY": "THỨ BA",
+    "WEDNESDAY": "THỨ TƯ",
+    "THURSDAY": "THỨ NĂM",
+    "FRIDAY": "THỨ SÁU",
+    "SATURDAY": "THỨ BẢY"
+  },
+  "months": {
+    "JANUARY": "THÁNG MỘT",
+    "FEBRUARY": "THÁNG HAI",
+    "MARCH": "THÁNG BA",
+    "APRIL": "THÁNG TƯ",
+    "MAY": "THÁNG NĂM",
+    "JUNE": "THÁNG SÁU",
+    "JULY": "THÁNG BẢY",
+    "AUGUST": "THÁNG TÁM",
+    "SEPTEMBER": "THÁNG CHÍN",
+    "OCTOBER": "THÁNG MƯỜI",
+    "NOVEMBER": "THÁNG MƯỜI MỘT",
+    "DECEMBER": "THÁNG MƯỜI HAI"
+  }
+}

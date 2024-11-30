@@ -1,0 +1,105 @@
+/* Control Button Styles */
+.control-button {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.control-button:hover:not(:disabled) {
+  opacity: 0.7;
+}
+
+.control-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Navigation Button Styles */
+.nav-button {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-button:hover:not(:disabled) {
+  opacity: 0.7;
+}
+
+.nav-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Section Styles for Mystery and Prayer Display */
+.mystery-section {
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.mystery-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+}
+
+.mystery-meditation {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  font-family: var(--font-secondary);
+}
+
+.prayer-section {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.prayer-name {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-family: var(--font-primary);
+}
+
+.prayer-content {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: var(--font-secondary);
+  text-align: left;
+  padding: 0 20px;
+}
+
+.control-button {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.control-button:hover:not(:disabled) {
+  opacity: 0.7;
+}
+
+.control-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+

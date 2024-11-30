@@ -1,0 +1,91 @@
+.volume-control {
+  position: relative;
+}
+
+.slider-container {
+  position: absolute;
+  bottom: 55px; /* Moved up 10px */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 20px; /* Increase the height to accommodate the larger hit area */
+  border-radius: 999px;
+  padding: 0;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  margin: 20;
+  padding: 0;
+  z-index: 2; /* Ensure it is on top */
+}
+
+.slider-track {
+  position: relative;
+  width: 100%;
+  height: 2px; /* Adjust the height of the track */
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  top: 50%; /* Center the track vertically */
+  transform: translateY(-50%);
+  z-index: 1; /* Track behind slider for visibility */
+}
+
+.slider-progress {
+  position: absolute;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.226);
+  border-radius: 999px;
+  z-index: 1; /* Keep progress track under input */
+}
+
+.slider-thumb {
+  position: absolute;
+  height: 22px; /* Keep the visual size small */
+  width: 22px;  /* Keep the visual size small */
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  padding: 10;
+  transform: translate(-50%, -50%);
+  cursor: pointer; /* Ensure the cursor changes to pointer */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a slight shadow for better visibility */
+  pointer-events: none; /* Prevent thumb from blocking events */
+}
+
+.slider-thumb::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px; /* Increase the hit area */
+  height: 30px; /* Increase the hit area */
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.volume-button {
+  padding: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  position: relative;
+}
+
+.volume-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px; /* Increase the hit area */
+  height: 30px; /* Increase the hit area */
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: transparent;
+}

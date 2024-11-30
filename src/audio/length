@@ -1,0 +1,19 @@
+import os
+from mutagen.mp3 import MP3
+
+# Directory containing the MP3 files
+directory = r'D:\29.3js\Project_rosary\20241106\responsive-layout\public\prayers'
+
+def get_mp3_length(file_path):
+    audio = MP3(file_path)
+    return audio.info.length
+
+def main():
+    for filename in os.listdir(directory):
+        if filename.endswith('.mp3'):
+            file_path = os.path.join(directory, filename)
+            length = get_mp3_length(file_path)
+            print(f'{filename}: {length:.2f} seconds')
+
+if __name__ == '__main__':
+    main()

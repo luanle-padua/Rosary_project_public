@@ -1,0 +1,500 @@
+/* Font Face Declaration */
+@font-face {
+  font-family: "Cormorant-SemiBold";
+  src: url("/fonts/Cormorant-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/fonts/CormorantGaramond-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Root Variables */
+:root {
+  --stroke-color: #ffffff00;
+  --stroke-color2: #ffffff;
+  --stroke-width: 1px;
+  --font-primary: "Cormorant-SemiBold", monospace;
+  --font-secondary: "Cormorant Garamond", monospace;
+  --vintage-red: #b22222;
+  --vintage-green: #228b22;
+  --vintage-gold: #daa520;
+  --vintage-cream: #fffdd0;
+  --vintage-brown: #241102;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--vintage-brown);
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  font-family: var(--font-primary);
+  color: #ffffff; /* Set all text to white */
+}
+
+/* Layout Containers */
+.scroll-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--vintage-brown);
+  overflow: auto;
+}
+
+.viewport-container {
+  position: relative;
+  min-width: 1600px;
+  min-height: 900px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--vintage-brown);
+}
+
+.layout-container {
+  position: absolute;
+  width: 1600px;
+  height: 900px;
+  display: flex;
+  background: transparent;
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Part A Styles */
+.part-a {
+  width: 750px;
+  height: 900px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: var(--stroke-width) solid var(--stroke-color);
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Header Styles */
+.header {
+  width: 750px;
+  height: 150px; /* Increased height to accommodate larger logo */
+  display: flex;
+  flex-shrink: 0;
+  background: transparent;
+  border-bottom: var(--stroke-width) solid var(--stroke-color);
+  position: relative;
+}
+
+.header-left {
+  width: 288px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0; /* Remove padding */
+  box-sizing: border-box;
+}
+
+.header-left::after {
+  content: "";
+  position: absolute;
+  right: 15px; /* Move stroke 15px to the left */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 38%;
+  background-color: var(--stroke-color2);
+}
+
+.header-logo {
+  height: 70px; /* Set desired height */
+  width: auto;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.header-right {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  position: relative;
+}
+
+/* Date Navigation Styles */
+.header-date {
+  flex: 1;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.day-navigation {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.day-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: -10px;
+}
+
+.header-date .day {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+  font-family: var(--font-primary);
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  position: relative;
+  top: 10px;
+}
+
+/* Columns Layout */
+.columns-container {
+  display: flex;
+  height: 770px;
+  flex-shrink: 0;
+}
+
+.left-column {
+  width: 300px;
+  height: 770px;
+  background: transparent;
+  border-right: var(--stroke-width) solid var(--stroke-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.right-column {
+  width: 450px;
+  height: 770px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  width: 450px;
+  background: transparent;
+  border-bottom: var(--stroke-width) solid var(--stroke-color);
+  font-family: var(--font-primary);
+  color: #ffffff; /* Set section text to white */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+/* Part B Styles */
+.part-b {
+  width: 850px;
+  min-width: 850px;
+  height: 900px;
+  background: #000;
+  overflow: visible !important;
+  flex-shrink: 0;
+  position: relative !important;
+  display: flex;
+  box-shadow: none; /* Remove shadow */
+  border: none; /* Remove border */
+}
+
+/* Image container styles */
+.image-container {
+  width: 100%;
+  height: 100%;
+  position: relative !important;
+  overflow: visible !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.part-b-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+  border: none;
+}
+
+.part-b-image.loaded {
+  opacity: 1;
+}
+
+/* Section Sizes */
+.section-105 { height: 6.5625rem; }
+.section-90 { height: 5.625rem; }
+.section-60-1, .section-60-2 { height: 3.75rem; }
+.section-350 { height: 21.875rem; }
+.section-105-bottom {
+  height: 6.5625rem;
+  position: absolute;
+  align-self: center;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Prayer Text Styles */
+.prayer-text,
+.prayer-content,
+.mystery-section,
+.prayer-name,
+.mystery-title,
+.mystery-meditation {
+  color: var(--vintage-cream); /* Set text to vintage cream */
+}
+
+.prayer-text {
+  font-size: 1rem;
+  line-height: 1.3;
+  text-align: justify;
+  padding: 60px;
+  margin: auto 0;
+  font-family: var(--font-secondary);
+}
+
+
+
+.mystery-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+}
+
+.prayer-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.5;
+  padding: 0;
+  text-align: center;
+}
+
+.mystery-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0;
+}
+
+.mystery-meditation {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  padding: 0 50px;
+  text-align: center;
+}
+
+/* Utility Classes */
+.text-white { color: #ffffff; }
+.text-center { text-align: center; }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.gap-4 { gap: 1rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.p-2 { padding: 0.5rem; }
+.opacity-75 { opacity: 0.75; }
+
+/* Navigation Buttons */
+.navigation-arrows {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  right: -10px;
+}
+
+.nav-button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.nav-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Animations */
+@keyframes glowPulse {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(2.5); }
+  100% { filter: brightness(1); }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+@keyframes glowPulse {
+  0% {
+    filter: drop-shadow(0 0 2px rgba(255, 165, 0, 0.5)) brightness(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 8px rgba(255, 165, 0, 0.8)) brightness(1.5);
+  }
+  100% {
+    filter: drop-shadow(0 0 2px rgba(255, 165, 0, 0.5)) brightness(1);
+  }
+}
+
+/* Scrollbar Styles */
+.scroll-container::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Loading Screen */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--vintage-brown);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-text {
+  color: var(--vintage-cream);
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  animation: pulse 1.5s infinite;
+}
+
+/* Rosary Container */
+.rosary-container {
+  position: relative;
+  max-width: 200px;  /* 70% of 160px */
+  max-height: 364px; /* 70% of 520px */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cross-group[data-active="true"] path {
+  animation: glowPulse 2s infinite;
+}
+
+.cross-group[data-active="true"] path:last-child {
+  filter: url(#glow);
+  animation: glowPulse 2s infinite;
+}
+
+circle[style*="darkorange"] {
+  filter: drop-shadow(0 0 4px rgba(255, 165, 0, 0.6));
+  transition: filter 0.3s ease;
+}
+
+circle {
+  transition: fill 0.3s ease, filter 0.3s ease;
+}
+
+circle[style*="darkorange"] {
+  filter: url(#glow);
+}
+
+/* Prayer Section */
+.prayer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: var(--vintage-cream);
+  min-height: 400px; /* Ensure consistent height */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mystery-type {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom:0rem;
+  padding-bottom: 0px;
+}
+
+.mystery-title {
+  font-family: var(--font-primary);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.mystery-meditation {
+  font-family: var(--font-secondary);
+  font-size: 1.1rem;
+  font-style: italic;
+  margin: 1rem 0;
+  opacity: 0.9;
+  max-width: 600px;
+}
+
+.prayer-name {
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+  letter-spacing: 0.05em;
+  padding-bottom: 0;
+}
+
+.prayer-content {
+  font-family: var(--font-secondary);
+  font-size: 1.3rem;
+  line-height: 1.2rem;
+  max-width: 600px;
+  line-height: 1.3;
+  padding-left: 10px;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+.text-green-400 {
+  color: #ffffff; /* Set text-green-400 to white */
+  font-size: 0.8rem;
+}

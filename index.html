@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Rosary Prayer</title>
+  
+  <!-- Only preload the fonts we use immediately -->
+  <link 
+    rel="preload" 
+    href="/fonts/Cormorant-SemiBold.ttf" 
+    as="font" 
+    type="font/ttf" 
+    crossorigin="anonymous"
+  />
+  
+  <!-- Preload logo only if it's used on the landing page -->
+  <link 
+    rel="preconnect" 
+    href="/images/logo2.png" 
+    as="image"
+  />
+  
+  <!-- Add font display swap to prevent FOIT -->
+  <style>
+    @font-face {
+      font-family: "Cormorant-SemiBold";
+      src: url("/fonts/Cormorant-SemiBold.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: "Cormorant Garamond";
+      src: url("/fonts/CormorantGaramond-Regular.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

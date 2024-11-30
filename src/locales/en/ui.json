@@ -1,0 +1,59 @@
+
+{
+  "navigation": {
+    "play": "Play",
+    "pause": "Pause",
+    "stop": "Stop",
+    "mute": "Mute",
+    "unmute": "Unmute"
+  },
+  "prayers": {
+    "signOfCross": "Sign of the Cross",
+    "apostlesCreed": "Apostles' Creed",
+    "ourFather": "Our Father",
+    "hailMary": "Hail Mary",
+    "gloryBe": "Glory Be",
+    "fatimaPrayer": "Fatima Prayer",
+    "hailHolyQueen": "Hail Holy Queen",
+    "finalPrayer": "Final Prayer"
+  },
+  "sections": {
+    "opening": "Opening Prayers",
+    "decade": "Decade",
+    "closing": "Closing Prayers"
+  },
+  "progress": {
+    "mystery": "Mystery {{number}} of 5",
+    "prayers": "{{section}} Prayers: {{current}} of {{total}}",
+    "autoPlaying": "Auto-playing"
+  },
+  "intentions": {
+    "faith": "For an increase of Faith",
+    "hope": "For an increase of Hope",
+    "charity": "For an increase of Charity"
+  },
+  "loading": "Loading...",
+  "days": {
+    "SUNDAY": "SUNDAY",
+    "MONDAY": "MONDAY",
+    "TUESDAY": "TUESDAY",
+    "WEDNESDAY": "WEDNESDAY",
+    "THURSDAY": "THURSDAY",
+    "FRIDAY": "FRIDAY",
+    "SATURDAY": "SATURDAY"
+  },
+  "months": {
+    "JANUARY": "JANUARY",
+    "FEBRUARY": "FEBRUARY",
+    "MARCH": "MARCH",
+    "APRIL": "APRIL",
+    "MAY": "MAY",
+    "JUNE": "JUNE",
+    "JULY": "JULY",
+    "AUGUST": "AUGUST",
+    "SEPTEMBER": "SEPTEMBER",
+    "OCTOBER": "OCTOBER",
+    "NOVEMBER": "NOVEMBER",
+    "DECEMBER": "DECEMBER"
+  }
+}

@@ -1,0 +1,127 @@
+/* Root Variables */
+:root {
+  --stroke-color: #ffffff00;
+  --stroke-color2: #ffffff;
+  --stroke-width: 1px;
+  --font-primary: "Cormorant-SemiBold", monospace;
+  --font-secondary: "Cormorant Garamond", monospace;
+  --vintage-red: #b22222;
+  --vintage-green: #228b22;
+  --vintage-gold: #daa520;
+  --vintage-cream: #fffdd0;
+  --vintage-brown: #241102;
+  --vintage-orange: #c18d65;
+  --vintage-tan: #9f7452;
+  --highlight-color: #e78233;
+}
+
+/* Landing page layout */
+.landing-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--vintage-brown);
+  color: white;
+}
+
+.landing-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0rem; /* Increased gap between image and buttons */
+  width: 100%;
+  max-width:900px;
+  padding: 2rem;
+}
+
+.landing-image {
+  width: 100%;
+  max-height: 100vh; /* Increased max height since we removed header */
+  object-fit: contain;
+  border-radius: 0.5rem;
+  
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Increased gap between buttons */
+  flex-wrap: wrap;
+  justify-content: center;
+  transform: translateX(-220px); /* Move to the left 50px */
+}
+
+/* Button styles */
+.pray-button {
+  background: transparent;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-primary);
+  border: 1px solid var(--vintage-cream);
+  border-radius: 26px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.pray-button:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pray-button:active {
+  transform: translateY(0);
+}
+
+.control-button {
+  background: transparent;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-primary);
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.control-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.control-button span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.lang-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+}
+
+.lang-code {
+  font-size: 1rem;
+  font-weight: 500;
+}
